@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Repeat Text</title>
+</head>
+<body>
+  <script>
+    // Ask user for input text
+    let text = prompt("Enter the text to repeat:");
+
+    // Ask user for number of times
+    let times = prompt("How many times do you want to repeat the text?");
+    times = parseInt(times);
+
+    // Repeat the text and display
+    if (text && !isNaN(times)) {
+      for (let i = 0; i < times; i++) {
+        document.write(text + "<br>");
+      }
+    } else {
+      document.write("Invalid input!");
+    }
+  </script>
+</body>
+</html>

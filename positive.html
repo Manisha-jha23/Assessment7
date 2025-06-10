@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Check Number Sign</title>
+</head>
+<body>
+  <script>
+    // Prompt user to enter a number
+    let number = prompt("Enter a number:");
+    number = parseFloat(number);  // Convert to number (supports decimals)
+
+    let result;
+
+    if (number > 0) {
+      result = "The number is Positive.";
+    } else if (number < 0) {
+      result = "The number is Negative.";
+    } else if (number === 0) {
+      result = "The number is Zero.";
+    } else {
+      result = "Invalid input!";
+    }
+
+    // Show result
+    document.write("<h2>" + result + "</h2>");
+  </script>
+</body>
+</html>
